@@ -53,6 +53,7 @@ Antes de un merge
 2. AMBIENTES VIRTUALES.
 
 Para empezar, se debe crear una carpeta que va a contener el ambiente virutal. Por convenio nosotros usaremos el nombre 'venv'.
+La carpeta de venv no se debe compartir, por lo tanto debe estar metida en el archivo de gitignore.
 
 Para instalar un ambiente virtual se debe dar los siguientes comandos:
  1. sudo apt install -y python3-venv # Esto pedirá el password del equipo.
