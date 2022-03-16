@@ -1,0 +1,50 @@
+Clase de Git
+
+Lo primero que hay que hacer es verificar que uno no esté parado en una carpeta que sea un repositorio. Para hacerlo dar los comandos:
+- git status : para verificar si la carpeta en la que se está parado es un repositorio. 
+- ls .git : también sirve. 
+
+En caso tal que se quiera crear una subcarpeta, crearla con el comando:
+- mkdir 'nombre de la carpeta'
+- cd 'nombre de la carpeta' : para moverse a la carpeta 'nombre de la carpeta'.
+
+Luego con el comando
+- git init
+se crea el repositorio. 
+- git --help : para ver la lista de opciones de git. 
+- cat 'archivo' : para ver los contenidos de 'archivo' sin abrirlo. 
+
+Para vincular el repositorio local a uno global dar el comando:
+- git remote add 'nombre_asignado' 'dirección'
+donde 'nombre_asignado' es un nombre que da uno, y la 'dirección' la da el repositorio
+que uno esté usando. 
+
+- git pull 'nombre asignado' : para hacer pull del repositorio al que uno le dio nombre. 
+- git checkout 'nombre del branch' : para traer un branch. 
+
+Convención para hacer commits. Para meter una descripción poner doble espacio. 
+
+Resolución de conflictos mediante creación de branches. 
+
+- git branch 'nueva rama' : para crear una nueva rama con nombre 'nueva rama'.
+
+- git fetch : para actualizar las ramas del repositorio. 
+
+Para hacer merge de branches. 
+
+Lo recomendable es pararse en el branch donde uno quiere que se establezca el merge con git 
+checkout. Luego dar el comando:
+- git merge 'branch to fuse.'
+
+Antes de un merge
+  1. No dejar cambios ni en stach ni en changes. Ya sea hacerles commit, discard o stach. 
+  2. Actualizar con - git fetch. 
+  3. Cambiarse de rama a la rama en la que va a quedar el merge.  
+  4. dar el comando: git reset --hard 'nombre repositorio'/'nombre_rama'. (Paso opcional)
+  5. git pull (opcional con el nombre del repositorio)
+  6. Realizar el merge. 
+  7. Lidiar con conflictos. 
+  6. Salvar, stage y commit. 
+  
+ El paso 4 es complicado, y hay que hacerlo con cuidado, pues es un comando destructivo. 
+
