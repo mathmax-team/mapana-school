@@ -59,7 +59,7 @@ Para instalar un ambiente virtual se debe dar los siguientes comandos:
  1. sudo apt install -y python3-venv # Esto pedirá el password del equipo.
  2. python3 -m venv venv # Él último venv se refiere a la carpeta.
 Después se da el siguiente comando para activar el ambiente virtual:
- 3. source venv/bin/activate
+ 3. source venv/bin/activate # El primer venv se refiere al nombre del ambiente virtual.
 
 Después de esto se debe crear la carpeta de requerimientos, la cual, por convenio, estamos llamando 'requirements.txt'.
 Una vez se agreguen los requerimientos, o se modifique el archivo, se debe dar el comando:
