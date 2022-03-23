@@ -65,3 +65,6 @@ Después de esto se debe crear la carpeta de requerimientos, la cual, por conven
 Una vez se agreguen los requerimientos, o se modifique el archivo, se debe dar el comando:
  - pip install -r requirements.txt
 
+Comandos útiles:
+
+- pip freeze : devuelve la lista de paquetes instalados en el ambiente virtual.

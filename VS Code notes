@@ -1,0 +1,33 @@
+VS Code notes. 
+
+1. Datos generales. 
+
+Los plugins the VS Code funcionan de manera general. Es decir, no se instalan para un workspace en general. 
+- ctrl + shift + p : para abrir una ventana de comandos de vs code.  
+
+2. Workspaces.
+
+Un workspace es un administrador que sirve como un explorador de carpetas, que permite explorar las carpetas contenidas en él. Cada carpeta puede ser un repositorio. 
+
+- En File, add folder permite añadir tantas carpetas como se quiera al workspace. 
+- save workspace as : sirve para guardar un archivo con la información del workspace. 
+
+La información más básica del workspace es las carpetas que contiene. Pero a este se le pueden asociar más características. Una de estas es que se le puede asociar un ambiente virtual. 
+
+- File --> Save workspace as : para guardar el workspace. 
+
+Selección del interprete para el workspace:
+1. debugger --> create a launch.json file --> workspace --> python --> python file.
+Esto crea un archivo dentro del repositorio.
+2.Dentro del archivo creado agregar la entrada
+ "python.defaultInterpreterPath" : ".venv/bin/python" 
+ dentro del diccionario que se encuentra dentro la lista de "configurations". 
+
+Comandos útiles:
+
+- En la pestaña de un archivo se la puede dar "open containing folder".
+- agregar *.code* en el gitignore permite ingornar todos los archivos que tengas la palabra 
+  .code en ella. (funciona para cualquier otra palabra)
+- En una terminal del computador:
+	- code .
+  abre vscode parado en la carpeta donde esté parada la terminal. 
