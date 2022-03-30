@@ -1,0 +1,53 @@
+VS Code notes. 
+
+1. Datos generales. 
+
+Los plugins the VS Code funcionan de manera general. Es decir, no se instalan para un workspace en general. 
+- ctrl + shift + p : para abrir una ventana de comandos de vs code.  
+
+2. Workspaces.
+
+Un workspace es un administrador que sirve como un explorador de carpetas, que permite explorar las carpetas contenidas en él. Cada carpeta puede ser un repositorio. 
+
+- En File, add folder permite añadir tantas carpetas como se quiera al workspace. 
+- save workspace as : sirve para guardar un archivo con la información del workspace. 
+
+La información más básica del workspace es las carpetas que contiene. Pero a este se le pueden asociar más características. Una de estas es que se le puede asociar un ambiente virtual. 
+
+- File --> Save workspace as : para guardar el workspace. 
+
+Selección del interprete para el workspace:
+1. debugger --> create a launch.json file --> workspace --> python --> python file.
+Esto crea un archivo dentro del repositorio.
+2.Dentro del archivo creado agregar la entrada
+ "python.defaultInterpreterPath" : ".venv/bin/python" 
+ dentro del diccionario que se encuentra dentro la lista de "configurations". 
+ 
+ 3. Debugger.
+ 
+ Un debugger ejecuta de manera controlada un script the Python, en el que mira el estado de los datos en memoria del programa (es lo que uno hace usando "print" de manera rudimentaria). El Debugger
+ permite que uno haga cambios a los datos variables. Además permite que uno vea la estructura interna del estado de la memoria en un punto dado, dandole acceso completo a uno. 
+ 
+ Una de las cosas prácticas de un debugger es la creación de breakpoints de manera sencilla y dinámica.
+ 
+ Convención de VS Code: (esto es necesario antes de correr el debugger)
+ 
+ Crear una carpeta que se llame '.vscode'. (Esta debe ir dentro de gitignore en caso tal de estar en un repositorio.) Para esto se debe seguir la siguiente secuencia:
+
+ Debugger --> create a lunch.json file --> Python (se abre una opción en VS Code) --> Python File (de nevo en la consola de VS Code)
+
+Nota: La última opción se podría cambiar, de acuerdo a las necesidades de uno.
+
+Como usar el debugger:
+
+-Para introducir un breakpoint en el código basta con poner un punto rojo (con un click) a la izquierda del número de línea. 
+-Para correr el debugger se de la click en el debugger. Luego se utilizan los botones para correr el código. 
+
+Comandos útiles:
+
+- En la pestaña de un archivo se la puede dar "open containing folder".
+- agregar *.code* en el gitignore permite ingornar todos los archivos que tengas la palabra 
+  .code en ella. (funciona para cualquier otra palabra)
+- En una terminal del computador:
+	- code .
+  abre vscode parado en la carpeta donde esté parada la terminal. 
